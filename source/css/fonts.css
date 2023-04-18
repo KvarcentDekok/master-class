@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Hauora";
+    src: local("Hauora Medium"),
+    url("../fonts/hauora-medium.woff2") format("woff2"),
+    url("../fonts/hauora-medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hauora";
+    src: local("Hauora SemiBold"),
+    url("../fonts/hauora-semibold.woff2") format("woff2"),
+    url("../fonts/hauora-semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Hauora";
+    src: local("Hauora ExtraBold"),
+    url("../fonts/hauora-extrabold.woff2") format("woff2"),
+    url("../fonts/hauora-extrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
