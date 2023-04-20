@@ -12,20 +12,28 @@
 <body>
 <header class="header">
 	<div class="container header__container">
-		<a href="index.html" class="logo">
-			<span class="visually-hidden">На главную</span>
-			<img src="img/logo.webp" class="logo__image" width="138" height="68" alt="Мастер Класс">
-		</a>
-
 		<div class="header__wrapper">
+			<a href="index.html" class="logo header__logo">
+				<span class="visually-hidden">На главную</span>
+				<img src="img/logo.webp" class="logo__image" width="138" height="68" alt="Мастер Класс">
+			</a>
+
 			<p class="paragraph header__paragraph">Оборудование для производства колбасных изделий и плавленного сыра</p>
 
 			<div class="social-wrapper header__social-wrapper">
 				<a href="#" class="social-link">
+					<svg width="22" height="17" viewBox="0 0 22 17">
+						<use xlink:href="img/sprite.svg#telegram"></use>
+					</svg>
+
 					<span class="visually-hidden">Мы в Telegram</span>
 				</a>
 
 				<a href="#" class="social-link">
+					<svg width="21" height="21" viewBox="0 0 21 21">
+						<use xlink:href="img/sprite.svg#whatsapp"></use>
+					</svg>
+
 					<span class="visually-hidden">Мы в Whatsapp</span>
 				</a>
 			</div>
@@ -63,27 +71,195 @@
 			</svg>
 		</button>
 
-		<nav id="main-navigation" class="navigation">
-			<a href="#" class="navigation__link">Шприцы</a>
-			<a href="#" class="navigation__link">Клипсаторы</a>
-			<a href="#" class="navigation__link">Линейки оборудования</a>
-			<a href="#" class="navigation__link">Расходные материалы</a>
-			<a href="#" class="navigation__link">Инвентарь и аксессуары</a>
+		<nav id="main-navigation" class="navigation header__navigation">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<a href="#" class="navigation__link">Шприцы</a>
+				</li>
+
+				<li class="navigation__item">
+					<a href="#" class="navigation__link">Клипсаторы</a>
+				</li>
+
+				<li class="navigation__item">
+					<a href="#" class="navigation__link">Линейки оборудования</a>
+				</li>
+
+				<li class="navigation__item">
+					<a href="#" class="navigation__link">Расходные материалы</a>
+
+					<ul class="navigation__sub-list">
+						<li class="navigation__sub-item">
+							<a href="#" class="navigation__sub-link">Скрепки</a>
+						</li>
+
+						<li class="navigation__sub-item">
+							<a href="#" class="navigation__sub-link">Лента этикитировочная</a>
+						</li>
+
+						<li class="navigation__sub-item">
+							<a href="#" class="navigation__sub-link">Петли</a>
+						</li>
+					</ul>
+				</li>
+
+				<li class="navigation__item">
+					<a href="#" class="navigation__link">Инвентарь и аксессуары</a>
+				</li>
+			</ul>
 
 			<button type="button" class="navigation__button" data-call="dropdown" aria-haspopup="true"
-			        aria-controls="navigation-extra-block">
-				Ещё 5
+			        aria-controls="navigation-extra-block" aria-expanded="false">
+				<svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line class="navigation__button-line" x1="2" y1="2" x2="38" y2="2" stroke="#FFFFFF" stroke-width="2"
+					      stroke-linecap="round"></line>
+					<line class="navigation__button-line" x1="2" y1="10" x2="38" y2="10" stroke="#FFFFFF" stroke-width="2"
+					      stroke-linecap="round"></line>
+					<line class="navigation__button-line" x1="2" y1="18" x2="38" y2="18" stroke="#FFFFFF" stroke-width="2"
+					      stroke-linecap="round"></line>
+				</svg>
+
+				<span class="navigation__button-text">Ещё 5</span>
 			</button>
 
 			<div id="navigation-extra-block" class="dropdown navigation__dropdown">
-				<a href="#" class="navigation__link">Запасные части</a>
-				<a href="#" class="navigation__link">Сервис</a>
-				<a href="#" class="navigation__link">Вспомогательное</a>
-				<a href="#" class="navigation__link">О компании</a>
-				<a href="#" class="navigation__link">Контакты</a>
+				<ul class="navigation__list">
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Запасные части</a>
+					</li>
+
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Сервис</a>
+					</li>
+
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Вспомогательное</a>
+					</li>
+
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">О компании</a>
+					</li>
+
+					<li class="navigation__item">
+						<a href="#" class="navigation__link">Контакты</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
 	</div>
 </header>
+
+<main class="main">
+	<h1 class="visually-hidden">Мастер Класс</h1>
+
+	<section class="section">
+		<h2 class="visually-hidden">Презентация</h2>
+
+		<div class="container">
+			<div class="slider">
+				<div id="main-slider" class="slider__init intro">
+					<ul class="slider__list swiper-wrapper">
+						<li class="slider__slide swiper-slide intro__slide">
+							<h3 class="intro__title">Оборудование для производства колбасной и сырной продукции</h3>
+
+							<p class="paragraph intro__paragraph">
+								ООО «Мастер Класс» работает только с продукцией высочайшего качества.
+								Именно поэтому с 2006 года мы являемся официальным дилером в РФ известного
+								производителя пищевого оборудования ООО «МП «КОМПО» (р. Беларусь)
+							</p>
+
+							<picture class="intro__picture">
+								<source media="(min-width: 660px)" type="image/avif"
+								        srcset="img/intro-slide-desktop@2x.avif 1x, img/intro-slide-desktop@2x.avif 2x">
+								<source type="image/avif"
+								        srcset="img/intro-slide-mobile@1x.avif 1x, img/intro-slide-mobile@2x.avif 2x">
+								<source media="(min-width: 660px)" type="image/webp"
+								        srcset="img/intro-slide-desktop@2x.webp 1x, img/intro-slide-desktop@2x.webp 2x">
+								<source type="image/webp"
+								        srcset="img/intro-slide-mobile@1x.webp 1x, img/intro-slide-mobile@2x.webp 2x">
+								<source media="(min-width: 660px)"
+								        srcset="img/intro-slide-desktop@2x.jpg 1x, img/intro-slide-desktop@2x.jpg 2x">
+
+								<img src="img/intro-slide-mobile@1x.jpg" srcset="img/intro-slide-mobile@2x.jpg 2x"
+								     width="1440" height="490"
+								     alt="Оборудование для производства колбасной и сырной продукции"
+								     class="intro__image">
+							</picture>
+						</li>
+
+						<li class="slider__slide swiper-slide intro__slide">
+							<h3 class="intro__title">Оборудование для производства колбасной и сырной продукции</h3>
+
+							<p class="paragraph intro__paragraph">
+								ООО «Мастер Класс» работает только с продукцией высочайшего качества.
+								Именно поэтому с 2006 года мы являемся официальным дилером в РФ известного
+								производителя пищевого оборудования ООО «МП «КОМПО» (р. Беларусь)
+							</p>
+
+							<picture class="intro__picture">
+								<source media="(min-width: 660px)" type="image/avif"
+								        srcset="img/intro-slide-desktop@2x.avif 1x, img/intro-slide-desktop@2x.avif 2x">
+								<source type="image/avif"
+								        srcset="img/intro-slide-mobile@1x.avif 1x, img/intro-slide-mobile@2x.avif 2x">
+								<source media="(min-width: 660px)" type="image/webp"
+								        srcset="img/intro-slide-desktop@2x.webp 1x, img/intro-slide-desktop@2x.webp 2x">
+								<source type="image/webp"
+								        srcset="img/intro-slide-mobile@1x.webp 1x, img/intro-slide-mobile@2x.webp 2x">
+								<source media="(min-width: 660px)"
+								        srcset="img/intro-slide-desktop@2x.jpg 1x, img/intro-slide-desktop@2x.jpg 2x">
+
+								<img src="img/intro-slide-mobile@1x.jpg" srcset="img/intro-slide-mobile@2x.jpg 2x"
+								     width="1440" height="490"
+								     alt="Оборудование для производства колбасной и сырной продукции"
+								     class="intro__image">
+							</picture>
+						</li>
+
+						<li class="slider__slide swiper-slide intro__slide">
+							<h3 class="intro__title">Оборудование для производства колбасной и сырной продукции</h3>
+
+							<p class="paragraph intro__paragraph">
+								ООО «Мастер Класс» работает только с продукцией высочайшего качества.
+								Именно поэтому с 2006 года мы являемся официальным дилером в РФ известного
+								производителя пищевого оборудования ООО «МП «КОМПО» (р. Беларусь)
+							</p>
+
+							<picture class="intro__picture">
+								<source media="(min-width: 660px)" type="image/avif"
+								        srcset="img/intro-slide-desktop@2x.avif 1x, img/intro-slide-desktop@2x.avif 2x">
+								<source type="image/avif"
+								        srcset="img/intro-slide-mobile@1x.avif 1x, img/intro-slide-mobile@2x.avif 2x">
+								<source media="(min-width: 660px)" type="image/webp"
+								        srcset="img/intro-slide-desktop@2x.webp 1x, img/intro-slide-desktop@2x.webp 2x">
+								<source type="image/webp"
+								        srcset="img/intro-slide-mobile@1x.webp 1x, img/intro-slide-mobile@2x.webp 2x">
+								<source media="(min-width: 660px)"
+								        srcset="img/intro-slide-desktop@2x.jpg 1x, img/intro-slide-desktop@2x.jpg 2x">
+
+								<img src="img/intro-slide-mobile@1x.jpg" srcset="img/intro-slide-mobile@2x.jpg 2x"
+								     width="1440" height="490"
+								     alt="Оборудование для производства колбасной и сырной продукции"
+								     class="intro__image">
+							</picture>
+						</li>
+					</ul>
+				</div>
+
+				<button type="button"
+				        class="slider__control intro__slider-control slider__control--left">
+					<span class="visually-hidden">Прокрутить влево</span>
+				</button>
+
+				<button type="button"
+				        class="slider__control intro__slider-control slider__control--right">
+					<span class="visually-hidden">Прокрутить вправо</span>
+				</button>
+			</div>
+		</div>
+	</section>
+</main>
+
+<script src="js/general.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

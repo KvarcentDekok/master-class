@@ -13,26 +13,109 @@
 
 .header__wrapper {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .header__paragraph {
     max-width: 300px;
-    margin-right: auto;
+    margin-right: 30px;
     display: none;
 }
 
 .header__social-wrapper {
     display: none;
+    margin-right: 30px;
+}
+
+.header__logo {
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.header__toggle {
+    padding: 0;
+    border: none;
+    margin-left: 55px;
+
+    background-color: transparent;
+}
+
+.header__toggle-line {
+    transition: all 200ms linear;
+}
+
+.header__toggle-line:first-of-type {
+    transform: scaleX(0.75);
+}
+
+.header__navigation {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 2;
+
+    visibility: hidden;
+    transition: all 200ms linear;
+    transform: translateX(100%);
+}
+
+.header--expanded .header__navigation {
+    visibility: visible;
+    transform: none;
+}
+
+.header--expanded .header__toggle-line {
+    transform-origin: center center;
+}
+
+.header--expanded .header__toggle-line:nth-child(1) {
+    transform: translate(-2px, 9px) rotate(45deg) scaleX(0.75);
+}
+
+.header--expanded .header__toggle-line:nth-child(2) {
+    transform: translateX(60px);
+    opacity: 0;
+}
+
+.header--expanded .header__toggle-line:nth-child(3) {
+    transform: translate(-2px, -8px) rotate(-45deg) scaleX(0.75);
 }
 
 @media (min-width: 900px) {
+    .header__wrapper {
+        justify-content: initial;
+        flex-grow: initial;
+    }
+
     .header__paragraph {
         display: block;
     }
 
     .header__social-wrapper {
-        display: block;
+        display: flex;
+    }
+
+    .header__toggle {
+        display: none;
+    }
+
+    .header__navigation {
+        position: relative;
+        top: 0;
+
+        visibility: visible;
+        transform: none;
+    }
+}
+
+@media (min-width: 1500px) {
+    .header__paragraph {
+        margin-right: 128px;
+    }
+
+    .header__social-wrapper {
+        margin-right: 68px;
     }
 }

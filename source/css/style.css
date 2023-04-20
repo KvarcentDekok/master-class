@@ -1,9 +1,15 @@
+@import url("variables.css");
 @import url("fonts.css");
 @import url("global.css");
 @import url("blocks/paragraph.css");
+@import url("blocks/social-wrapper.css");
+@import url("blocks/dropdown.css");
+@import url("blocks/navigation.css");
 @import url("blocks/header.css");
 @import url("blocks/container.css");
 @import url("blocks/logo.css");
 @import url("blocks/visually-hidden.css");
-@import url("blocks/social-wrapper.css");
 @import url("blocks/social-link.css");
+@import url("blocks/contacts.css");
+@import url("blocks/slider.css");
+@import url("blocks/intro.css");

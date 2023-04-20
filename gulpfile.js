@@ -99,5 +99,5 @@ gulp.task("refresh", (done) => {
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "html", "css", "css:libs"/*, "js"*/));
+gulp.task("build", gulp.series("clean", "copy", "html", "css", "css:libs", "js"));
 gulp.task("start", gulp.series("build", "server"));
