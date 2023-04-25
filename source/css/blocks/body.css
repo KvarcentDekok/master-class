@@ -1,0 +1,21 @@
+.body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.body--circles::before {
+    width: 617px;
+    height: 617px;
+
+    position: absolute;
+    right: -277px;
+    top: -198px;
+
+    background: url("../img/circles.svg") no-repeat center/100%;
+}
+
+@media (min-width: 900px) {
+    .body--circles::before {
+        content: "";
+    }
+}

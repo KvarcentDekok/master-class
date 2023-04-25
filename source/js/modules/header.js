@@ -1,3 +1,8 @@
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 const CLASSNAME_EXPANDED = 'header--expanded';
 const ToggleText = {
     Expanded: 'Свернуть меню',
@@ -23,6 +28,12 @@ function onToggleClick() {
 function header() {
     headerToggle.addEventListener('click', () => {
         onToggleClick();
+    });
+
+    ScrollTrigger.create({
+        start: 'top -223',
+        end: 99999,
+        toggleClass: {className: 'header--fixed', targets: '.header'}
     });
 }
 

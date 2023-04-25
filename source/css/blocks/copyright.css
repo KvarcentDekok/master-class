@@ -1,0 +1,32 @@
+.copyright {
+    margin: 0;
+    padding-left: 21px;
+
+    position: relative;
+
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(51, 51, 51, 0.8);
+}
+
+.copyright::before {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    content: "";
+
+    background: url("../img/copyright.svg") no-repeat center;
+    transform: translateY(-50%);
+}
+
+@media (min-width: 900px) {
+    .copyright {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}

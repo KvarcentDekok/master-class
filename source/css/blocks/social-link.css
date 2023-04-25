@@ -1,20 +1,19 @@
 .social-link {
     width: 38px;
     height: 38px;
-    border: 1px solid #343434;
+    border: 1px solid var(--dark-grey-color);
     display: flex;
     justify-content: center;
     align-items: center;
 
     color: #FFFFFF;
 
-    background-color: #343434;
+    background-color: var(--dark-grey-color);
     border-radius: 50%;
     transition: all 200ms linear;
 }
 
 .social-link:hover {
-    color: #343434;
-
-    background-color: #FFFFFF;
+    background-color: var(--dark-red-color);
+    border-color: var(--dark-red-color);
 }

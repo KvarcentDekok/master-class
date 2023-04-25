@@ -1,0 +1,5 @@
+@media (min-width: 900px) {
+    .header--fixed + .main {
+        padding-top: 223px;
+    }
+}

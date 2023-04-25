@@ -1,6 +1,18 @@
+@keyframes header-appear {
+    from {
+        transform: translateY(-223px);
+    }
+
+    to {
+        transform: none;
+    }
+}
+
 .header {
     width: 100%;
     padding-top: 20px;
+
+    z-index: 2;
 }
 
 .header__container {
@@ -51,17 +63,23 @@
 }
 
 .header__navigation {
+    width: 0;
+
     position: absolute;
     top: 100px;
     left: 0;
     z-index: 2;
 
+    white-space: nowrap;
+
     visibility: hidden;
     transition: all 200ms linear;
-    transform: translateX(100%);
+    overflow: hidden;
 }
 
 .header--expanded .header__navigation {
+    width: 100%;
+
     visibility: visible;
     transform: none;
 }
@@ -84,6 +102,25 @@
 }
 
 @media (min-width: 900px) {
+    .header--fixed {
+        padding-top: 0;
+
+        position: fixed;
+
+        background-color: var(--light-red-color);
+        animation: 200ms linear forwards header-appear;
+    }
+
+    .header--fixed .header__container {
+        row-gap: 0;
+    }
+
+    .header--fixed .header__wrapper {
+        height: 0;
+
+        overflow: hidden;
+    }
+
     .header__wrapper {
         justify-content: initial;
         flex-grow: initial;
@@ -102,11 +139,14 @@
     }
 
     .header__navigation {
+        width: 100%;
+
         position: relative;
         top: 0;
 
         visibility: visible;
         transform: none;
+        overflow: visible;
     }
 }
 

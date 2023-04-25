@@ -1,0 +1,70 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.features__item {
+    padding-top: 85px;
+    width: 100%;
+
+    position: relative;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: var(--dark-grey-color);
+}
+
+.features__item::before {
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    content: "";
+
+    transform: translateX(-50%);
+}
+
+.features__item--dealer::before {
+    background: url("../img/icon-dealer.webp") no-repeat center/100%;
+}
+
+.features__item--experience::before {
+    background: url("../img/icon-experience.webp") no-repeat center/80%;
+}
+
+.features__item--price::before {
+    background: url("../img/icon-price.webp") no-repeat center/100%;
+}
+
+.features__item--service::before {
+    background: url("../img/icon-service.webp") no-repeat center/100%;
+}
+
+.features__break {
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .features__item {
+        max-width: 25%;
+        width: auto;
+
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .features__break {
+        display: initial;
+    }
+}

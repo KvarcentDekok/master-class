@@ -47,8 +47,8 @@
 
 .slider__control::before {
     display: block;
-    width: 32px;
-    height: 32px;
+    width: calc(100% - 7px);
+    height: calc(100% - 7px);
 
     content: "";
 
@@ -83,8 +83,8 @@
     }
 
     .slider__control::before {
-        width: 54px;
-        height: 54px;
+        width: calc(100% - 12px);
+        height: calc(100% - 12px);
     }
 
     .slider__control--left {
