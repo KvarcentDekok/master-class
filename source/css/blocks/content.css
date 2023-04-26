@@ -23,6 +23,15 @@
     color: var(--dark-grey-color);
 }
 
+.content__title {
+    margin: 0 0 20px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #1D1D1D;
+}
+
 @media (min-width: 900px) {
     .content__media {
         width: 583px;
@@ -39,7 +48,12 @@
     .content__text p {
         margin: 7px 0;
 
-        font-size: 22px;
-        line-height: 33px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .content__title {
+        font-size: 35px;
+        line-height: 52px;
     }
 }

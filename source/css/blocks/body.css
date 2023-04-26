@@ -3,19 +3,33 @@
     overflow-x: hidden;
 }
 
-.body--circles::before {
+.body--circles-right::before {
     width: 617px;
     height: 617px;
 
     position: absolute;
     right: -277px;
     top: -198px;
+    z-index: -1;
+
+    background: url("../img/circles.svg") no-repeat center/100%;
+}
+
+.body--circles-left::before {
+    width: 663px;
+    height: 663px;
+
+    position: absolute;
+    left: -378px;
+    top: -140px;
+    z-index: -1;
 
     background: url("../img/circles.svg") no-repeat center/100%;
 }
 
 @media (min-width: 900px) {
-    .body--circles::before {
+    .body--circles-right::before,
+    .body--circles-left::before {
         content: "";
     }
 }

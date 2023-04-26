@@ -1,4 +1,4 @@
-import Swiper, {Navigation, Autoplay} from 'swiper';
+import Swiper, {Navigation, Autoplay, Thumbs, Grid} from 'swiper';
 
 export function initSliderMain() {
     const sliderMain = new Swiper('#main-slider', {
@@ -27,6 +27,42 @@ export function initSliderAwards() {
             nextEl: '.slider__control.awards__slider-control.slider__control--right',
             prevEl: '.slider__control.awards__slider-control.slider__control--left',
             disabledClass: 'slider__control--disabled'
+        }
+    });
+}
+
+export function initSliderGallery() {
+    const sliderThumbs = new Swiper('#gallery-thumbs', {
+        modules: [Grid, Navigation],
+        spaceBetween: 10,
+        slidesPerView: 5,
+        lazy: true,
+        slideToClickedSlide: true,
+        watchSlidesProgress: true,
+        grid: {
+            fill: 'row',
+            rows: 2,
+        },
+        breakpoints: {
+            900: {
+                grid: false
+            }
+        }
+    });
+
+    const sliderPresentation = new Swiper('#gallery-presentation', {
+        modules: [Navigation, Thumbs],
+        spaceBetween: 30,
+        slidesPerView: 1,
+        lazy: true,
+        navigation: {
+            nextEl: '.slider__control.gallery__slider-control.slider__control--right',
+            prevEl: '.slider__control.gallery__slider-control.slider__control--left',
+            disabledClass: 'slider__control--disabled'
+        },
+        thumbs: {
+            swiper: sliderThumbs,
+            slideThumbActiveClass: 'gallery__thumb--active'
         }
     });
 }

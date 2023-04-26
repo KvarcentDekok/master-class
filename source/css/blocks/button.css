@@ -3,6 +3,7 @@
     width: 100%;
     display: block;
     margin: 5px;
+    border: none;
 
     position: relative;
 
@@ -16,6 +17,10 @@
     background: radial-gradient(ellipse at top, var(--light-red-color), var(--dark-red-color));
     border-radius: 10px;
     cursor: pointer;
+}
+
+.button--mt-auto {
+    margin-top: auto;
 }
 
 .button::before {

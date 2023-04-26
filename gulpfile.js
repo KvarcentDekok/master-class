@@ -17,7 +17,7 @@ const named = require('vinyl-named');
 const atImport = require('postcss-import');
 
 const plugins = [
-    'node_modules/swiper/swiper.min.css',
+    'node_modules/swiper/swiper-bundle.min.css',
     'node_modules/swiper/modules/scrollbar/scrollbar.min.css',
 ];
 
@@ -57,7 +57,8 @@ gulp.task("html", () => {
 gulp.task("js", () => {
     return gulp.src([
         './source/js/general.js',
-        './source/js/index.js'
+        './source/js/index.js',
+        './source/js/product.js'
     ])
         .pipe(named())
         .pipe(webpackStream(webpackConfig))

@@ -15,6 +15,18 @@
     background: url("../img/circles.svg") no-repeat center/100%;
 }
 
+.section--circles-right::before {
+    width: 445px;
+    height: 445px;
+
+    position: absolute;
+    right: -267px;
+    top: 50%;
+
+    background: url("../img/circles.svg") no-repeat center/100%;
+    transform: translateY(-50%);
+}
+
 .section--circles-center::before {
     width: 764px;
     height: 764px;
@@ -50,11 +62,12 @@
 
 @media (min-width: 900px) {
     .section {
-        padding: 70px 80px;
+        padding: 70px 0 80px;
     }
 
     .section--circles-left::before,
-    .section--circles-center::before {
+    .section--circles-center::before,
+    .section--circles-left::before {
         content: "";
     }
 
@@ -63,10 +76,10 @@
     }
 
     .section__title {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
 
-        font-size: 55px;
-        line-height: 66px;
+        font-size: 40px;
+        line-height: 50px;
     }
 
     .section__title--logo::after {
@@ -82,5 +95,14 @@
         background: #F8D548 url("../img/logo-kompo.webp") no-repeat center/80%;
         border-radius: 10px;
         transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 1280px) {
+    .section__title {
+        margin-bottom: 40px;
+
+        font-size: 55px;
+        line-height: 66px;
     }
 }

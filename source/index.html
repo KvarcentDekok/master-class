@@ -9,145 +9,8 @@
 
 	<title>Мастер Класс</title>
 </head>
-<body class="body body--circles">
-<header class="header">
-	<div class="container header__container">
-		<div class="header__wrapper">
-			<a href="index.html" class="logo header__logo">
-				<span class="visually-hidden">На главную</span>
-				<img src="img/logo.webp" class="logo__image" width="138" height="68" alt="Мастер Класс">
-			</a>
-
-			<p class="paragraph header__paragraph">Оборудование для производства колбасных изделий и плавленного сыра</p>
-
-			<div class="social-wrapper header__social-wrapper">
-				<a href="#" class="social-link">
-					<svg width="22" height="17" viewBox="0 0 22 17">
-						<use xlink:href="img/sprite.svg#telegram"></use>
-					</svg>
-
-					<span class="visually-hidden">Мы в Telegram</span>
-				</a>
-
-				<a href="#" class="social-link">
-					<svg width="21" height="21" viewBox="0 0 21 21">
-						<use xlink:href="img/sprite.svg#whatsapp"></use>
-					</svg>
-
-					<span class="visually-hidden">Мы в Whatsapp</span>
-				</a>
-			</div>
-
-			<div class="contacts header__contacts">
-				<a href="tel:+74732475786" class="contacts__link contacts__link--phone contacts__link--main">
-					+7 (473) 247 57 86
-				</a>
-
-				<a href="https://yandex.ru/maps/193/voronezh/house/volgogradskaya_ulitsa_48/Z0AYdAFmSU0HQFtrfXp1dnthbA==/?ll=39.273539%2C51.648724&z=13.29"
-				   class="contacts__link contacts__link--address">
-					Воронеж, ул. Волгоградская, д.48
-				</a>
-
-				<a href="tel:+74732471778" class="contacts__link contacts__link--phone">
-					+7 (473) 247 17 78
-				</a>
-
-				<a href="mailto:mastervrn@mail.ru" class="contacts__link contacts__link--email">
-					mastervrn@mail.ru
-				</a>
-			</div>
-		</div>
-
-		<button type="button" class="header__toggle" aria-controls="main-navigation" aria-expanded="false">
-			<span class="visually-hidden header__toggle-text">Развернуть меню</span>
-
-			<svg width="49" height="28" viewBox="0 0 49 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<line class="header__toggle-line" x1="2" y1="2" x2="47" y2="2" stroke="#8D0D0C" stroke-width="4"
-				      stroke-linecap="round"></line>
-				<line class="header__toggle-line" x1="2" y1="14" x2="47" y2="14" stroke="#8D0D0C" stroke-width="4"
-				      stroke-linecap="round"></line>
-				<line class="header__toggle-line" x1="2" y1="26" x2="47" y2="26" stroke="#8D0D0C" stroke-width="4"
-				      stroke-linecap="round"></line>
-			</svg>
-		</button>
-
-		<nav id="main-navigation" class="navigation header__navigation">
-			<ul class="navigation__list">
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Шприцы</a>
-				</li>
-
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Клипсаторы</a>
-				</li>
-
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Линейки оборудования</a>
-				</li>
-
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Расходные материалы</a>
-
-					<ul class="navigation__sub-list">
-						<li class="navigation__sub-item">
-							<a href="#" class="navigation__sub-link">Скрепки</a>
-						</li>
-
-						<li class="navigation__sub-item">
-							<a href="#" class="navigation__sub-link">Лента этикитировочная</a>
-						</li>
-
-						<li class="navigation__sub-item">
-							<a href="#" class="navigation__sub-link">Петли</a>
-						</li>
-					</ul>
-				</li>
-
-				<li class="navigation__item">
-					<a href="#" class="navigation__link">Инвентарь и аксессуары</a>
-				</li>
-			</ul>
-
-			<button type="button" class="navigation__button" data-call="dropdown" aria-haspopup="true"
-			        aria-controls="navigation-extra-block" aria-expanded="false">
-				<svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line class="navigation__button-line" x1="2" y1="2" x2="38" y2="2" stroke="#FFFFFF" stroke-width="2"
-					      stroke-linecap="round"></line>
-					<line class="navigation__button-line" x1="2" y1="10" x2="38" y2="10" stroke="#FFFFFF" stroke-width="2"
-					      stroke-linecap="round"></line>
-					<line class="navigation__button-line" x1="2" y1="18" x2="38" y2="18" stroke="#FFFFFF" stroke-width="2"
-					      stroke-linecap="round"></line>
-				</svg>
-
-				<span class="navigation__button-text">Ещё 5</span>
-			</button>
-
-			<div id="navigation-extra-block" class="dropdown navigation__dropdown">
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Запасные части</a>
-					</li>
-
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Сервис</a>
-					</li>
-
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Вспомогательное</a>
-					</li>
-
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">О компании</a>
-					</li>
-
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Контакты</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</header>
+<body class="body body--circles-right">
+@@include('fragments/header.html')
 
 <main class="main">
 	<h1 class="visually-hidden">Мастер Класс</h1>
@@ -263,7 +126,7 @@
 			<h2 class="section__title"><span class="text-red">Линейки оборудования</span> для производства</h2>
 
 			<div class="row">
-				<div class="row__col-12 row__col-md-6">
+				<div class="row__col-12 row__col-sm-6">
 					<article class="card card--circles card--sausage">
 						<h3 class="card__title"><span class="text-red">Колбасной</span> <br> продукции</h3>
 
@@ -291,7 +154,7 @@
 					</article>
 				</div>
 
-				<div class="row__col-12 row__col-md-6">
+				<div class="row__col-12 row__col-sm-6">
 					<article class="card card--circles card--cheese">
 						<h3 class="card__title"><span class="text-red">Сырной</span> <br> продукции</h3>
 
@@ -327,8 +190,8 @@
 			<h2 class="section__title"><span class="text-red">Популярное</span> оборудование</h2>
 
 			<ul class="row">
-				<li class="row__col-12 row__col-md-3">
-					<article class="card card--expandable card--small card--flex-vertical">
+				<li class="row__col-12 row__col-sm-6 row__col-md-3">
+					<a href="product.html" class="card card--expandable card--small card--flex-vertical">
 						<h3 class="paragraph card__paragraph">Клипсатор автоматический двухскрепочный КОМПО КН 501</h3>
 
 						<picture class="card__picture">
@@ -349,11 +212,11 @@
 							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
 							<li class="list__item">Повышенная точность дозирования</li>
 						</ul>
-					</article>
+					</a>
 				</li>
 
-				<li class="row__col-12 row__col-md-3">
-					<article class="card card--expandable card--small card--flex-vertical">
+				<li class="row__col-12 row__col-sm-6 row__col-md-3">
+					<a href="product.html" class="card card--expandable card--small card--flex-vertical">
 						<h3 class="paragraph card__paragraph">Шприц вакуумный КОМПО ОПТИ 2000</h3>
 
 						<picture class="card__picture">
@@ -374,11 +237,11 @@
 							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
 							<li class="list__item">Повышенная точность дозирования</li>
 						</ul>
-					</article>
+					</a>
 				</li>
 
-				<li class="row__col-12 row__col-md-3">
-					<article class="card card--expandable card--small card--flex-vertical">
+				<li class="row__col-12 row__col-sm-6 row__col-md-3">
+					<a href="product.html" class="card card--expandable card--small card--flex-vertical">
 						<h3 class="paragraph card__paragraph">Устройство точного дозирования КОМПО УТД-01</h3>
 
 						<picture class="card__picture">
@@ -399,11 +262,11 @@
 							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
 							<li class="list__item">Повышенная точность дозирования</li>
 						</ul>
-					</article>
+					</a>
 				</li>
 
-				<li class="row__col-12 row__col-md-3">
-					<article class="card card--expandable card--small card--flex-vertical">
+				<li class="row__col-12 row__col-sm-6 row__col-md-3">
+					<a href="product.html" class="card card--expandable card--small card--flex-vertical">
 						<h3 class="paragraph card__paragraph">Линкерный перекрутчик КОМПО ТВИСТ</h3>
 
 						<picture class="card__picture">
@@ -424,7 +287,7 @@
 							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
 							<li class="list__item">Повышенная точность дозирования</li>
 						</ul>
-					</article>
+					</a>
 				</li>
 			</ul>
 
@@ -462,13 +325,13 @@
 			<div class="content">
 				<div class="content__media content__media--right">
 					<div class="video">
-						<a class="video__link" href="https://youtu.be/D60sE0A6-qg">
+						<a class="video__link" href="https://youtu.be/qH13Jp81zYs">
 							<picture>
-								<source srcset="https://i.ytimg.com/vi_webp/D60sE0A6-qg/maxresdefault.webp"
+								<source srcset="https://i.ytimg.com/vi_webp/qH13Jp81zYs/maxresdefault.webp"
 								        type="image/webp">
 
-								<img class="video__media" src="https://i.ytimg.com/vi/D60sE0A6-qg/maxresdefault.jpg"
-								     width="495" height="278" alt='"МАСТЕР КЛАСС" - дилер оборудования "Компо"'>
+								<img class="video__media" src="https://i.ytimg.com/vi/qH13Jp81zYs/maxresdefault.jpg"
+								     width="495" height="278" alt="Линейка оборудования: шприц КОМПО ОПТИ 2000 и волчок ВП-6000 и клипсатор КН-501">
 							</picture>
 						</a>
 
@@ -491,7 +354,7 @@
 						выгодные условия сотрудничества, партнерство, основанное на честности и доверии.
 					</p>
 
-					<a href="#" class="button">Подробнее</a>
+					<a href="#" class="button button--mt-auto">Подробнее</a>
 				</div>
 			</div>
 
@@ -614,60 +477,7 @@
 	</section>
 </main>
 
-<footer class="footer">
-	<section class="footer__section footer__section--top">
-		<h2 class="visually-hidden">Контакты</h2>
-
-		<div class="container footer__container">
-			<a href="index.html" class="logo footer__logo">
-				<span class="visually-hidden">На главную</span>
-				<img src="img/logo.webp" class="logo__image" width="138" height="68" alt="Мастер Класс">
-			</a>
-
-			<div class="contacts footer__contacts">
-				<a href="tel:+74732471778" class="contacts__link contacts__link--phone">
-					+7 (473) 247 17 78
-				</a>
-
-				<a href="mailto:mastervrn@mail.ru" class="contacts__link contacts__link--email">
-					mastervrn@mail.ru
-				</a>
-
-				<a href="https://yandex.ru/maps/193/voronezh/house/volgogradskaya_ulitsa_48/Z0AYdAFmSU0HQFtrfXp1dnthbA==/?ll=39.273539%2C51.648724&z=13.29"
-				   class="contacts__link contacts__link--address">
-					Воронеж, ул. Волгоградская, д.48
-				</a>
-			</div>
-
-			<div class="social-wrapper footer__social-wrapper">
-				<a href="#" class="social-link">
-					<svg width="22" height="17" viewBox="0 0 22 17">
-						<use xlink:href="img/sprite.svg#telegram"></use>
-					</svg>
-
-					<span class="visually-hidden">Мы в Telegram</span>
-				</a>
-
-				<a href="#" class="social-link">
-					<svg width="21" height="21" viewBox="0 0 21 21">
-						<use xlink:href="img/sprite.svg#whatsapp"></use>
-					</svg>
-
-					<span class="visually-hidden">Мы в Whatsapp</span>
-				</a>
-			</div>
-		</div>
-	</section>
-
-	<section class="footer__section footer__section--bottom">
-		<h2 class="visually-hidden">Копирайт</h2>
-
-		<div class="container footer__container">
-			<p class="copyright">ООО «Мастер Класс», 2002 — 2023</p>
-			<a href="https://intrid.ru/" class="intrid">made in INTRID</a>
-		</div>
-	</section>
-</footer>
+@@include('fragments/footer.html')
 
 <script src="js/general.js"></script>
 <script src="js/index.js"></script>
