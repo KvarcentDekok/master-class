@@ -6,6 +6,14 @@
     flex-direction: column;
 }
 
+.flex--wrap {
+    flex-wrap: wrap;
+}
+
+.flex--gap {
+    gap: 10px;
+}
+
 .flex__order-1 {
     order: 1;
 }
@@ -27,6 +35,10 @@
 }
 
 @media (min-width: 900px) {
+    .flex--gap {
+        gap: 30px;
+    }
+
     .flex__order-md-4 {
         order: 4;
     }

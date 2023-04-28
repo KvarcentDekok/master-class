@@ -1,4 +1,4 @@
-import Swiper, {Navigation, Autoplay, Thumbs, Grid} from 'swiper';
+import Swiper, {Navigation, Autoplay, Thumbs, Grid, FreeMode} from 'swiper';
 
 export function initSliderMain() {
     const sliderMain = new Swiper('#main-slider', {
@@ -63,6 +63,44 @@ export function initSliderGallery() {
         thumbs: {
             swiper: sliderThumbs,
             slideThumbActiveClass: 'gallery__thumb--active'
+        }
+    });
+}
+
+export function initScrollTable() {
+    const tableScroll = new Swiper("#table-scroll", {
+        modules: [FreeMode],
+        direction: 'horizontal',
+        slidesPerView: 'auto',
+        freeMode: true
+    });
+}
+
+export function initRowPhotos() {
+    const sliderRowPhotos = new Swiper('#row-photos', {
+        modules: [Grid, Autoplay],
+        spaceBetween: 15,
+        slidesPerView: 2,
+        lazy: true,
+        grid: {
+            fill: 'row',
+            rows: 2,
+        },
+        autoplay: {
+            enabled: false
+        },
+        breakpoints: {
+            900: {
+                grid: false,
+                spaceBetween: 25,
+                slidesPerView: 4,
+                loop: true,
+                autoplay: {
+                    enabled: true,
+                    delay: 0
+                },
+                speed: 5000,
+            }
         }
     });
 }

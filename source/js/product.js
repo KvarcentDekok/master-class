@@ -1,3 +1,5 @@
-import {initSliderGallery} from "./modules/slider";
+import {initRowPhotos, initScrollTable, initSliderGallery} from "./modules/slider";
 
 initSliderGallery();
+initScrollTable();
+initRowPhotos();

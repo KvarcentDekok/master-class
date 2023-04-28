@@ -3,6 +3,8 @@
     flex-wrap: wrap;
     gap: 25px;
     justify-content: space-between;
+
+    position: relative;
 }
 
 .content__media {
@@ -30,6 +32,18 @@
     font-size: 30px;
     line-height: 36px;
     color: #1D1D1D;
+}
+
+@media (max-width: 900px) {
+    .content--pt {
+        padding-top: 100px;
+    }
+
+    .content__title--mobile-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 @media (min-width: 900px) {

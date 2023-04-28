@@ -15,10 +15,10 @@
 @import url("blocks/intro.css");
 @import url("blocks/section.css");
 @import url("blocks/body.css");
-@import url("blocks/text-red.css");
 @import url("blocks/row.css");
 @import url("blocks/list.css");
 @import url("blocks/card.css");
+@import url("blocks/text-red.css");
 @import url("blocks/main.css");
 @import url("blocks/features.css");
 @import url("blocks/content.css");
@@ -32,3 +32,12 @@
 @import url("blocks/intrid.css");
 @import url("blocks/breadcrumbs.css");
 @import url("blocks/gallery.css");
+@import url("blocks/table.css");
+@import url("blocks/modal.css");
+@import url("blocks/substrate-modal.css");
+@import url("blocks/no-scroll.css");
+@import url("blocks/text-input.css");
+@import url("blocks/invalid-element.css");
+@import url("blocks/figure.css");
+@import url("blocks/row-photos.css");
+@import url("blocks/document.css");

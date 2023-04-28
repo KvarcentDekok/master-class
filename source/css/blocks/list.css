@@ -3,6 +3,7 @@
     padding: 0;
 
     list-style: none;
+    counter-reset: counter;
 }
 
 .list__item {
@@ -14,6 +15,12 @@
     font-size: 18px;
     line-height: 25px;
     color: var(--dark-grey-color);
+
+    counter-increment: counter;
+}
+
+.list--ordered .list__item {
+    padding: 0;
 }
 
 .list__item::before {
@@ -31,13 +38,88 @@
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25), -2px -2px 4px 0 rgba(255, 255, 255, 0.25);
 }
 
+.list--ordered .list__item::before {
+    content: none;
+}
+
 .card__list .list__item {
     font-size: 16px;
     line-height: 24px;
 }
 
+.list__title {
+    margin: 0 0 10px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-red-color);
+}
+
+.list--ordered .list__title {
+    padding-left: 34px;
+
+    position: relative;
+}
+
+.list--ordered .list__title::before {
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--light-red-color);
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    content: "";
+
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.list--ordered .list__title::after {
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    left: 2px;
+    top: 50%;
+
+    content: counter(counter);
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background-color: var(--light-red-color);
+}
+
 @media (min-width: 900px) {
     .list--mb {
         margin-bottom: 30px;
+    }
+
+    .list__title {
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .list--ordered .list__title {
+        padding-left: 45px;
+    }
+
+    .list--ordered .list__title::before {
+        width: 28px;
+        height: 28px;
+    }
+
+    .list--ordered .list__title::after {
+        width: 24px;
+        height: 24px;
+
+        font-size: 15px;
+        line-height: 24px;
     }
 }

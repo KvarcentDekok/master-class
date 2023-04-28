@@ -60,6 +60,14 @@
     position: relative;
 }
 
+@media (max-width: 900px) {
+    .section__title--mobile-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
 @media (min-width: 900px) {
     .section {
         padding: 70px 0 80px;
@@ -67,7 +75,7 @@
 
     .section--circles-left::before,
     .section--circles-center::before,
-    .section--circles-left::before {
+    .section--circles-right::before {
         content: "";
     }
 

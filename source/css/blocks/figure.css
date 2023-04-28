@@ -1,0 +1,41 @@
+.figure {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+
+    position: relative;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.figure__picture {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.figure__image {
+    width: auto;
+    height: auto;
+    max-width: initial;
+    min-width: 100%;
+    min-height: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 900px) {
+    .figure {
+        height: 100%;
+        min-height: 350px;
+    }
+}

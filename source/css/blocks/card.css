@@ -85,6 +85,10 @@
     padding: 50px 20px 0;
 }
 
+.card--extra-small {
+    padding: 15px;
+}
+
 .card--circles::before {
     width: 525px;
     height: 525px;
@@ -110,7 +114,7 @@
 }
 
 .card__title {
-    margin: 0;
+    margin: 0 0 24px;
 
     font-weight: 600;
     font-size: 24px;
@@ -177,6 +181,10 @@
     transition: all 400ms linear;
 }
 
+.card--extra-small .card__list {
+    padding-right: 20px;
+}
+
 .card__subtitle {
     margin: 0 0 20px;
 
@@ -219,6 +227,10 @@
 
     .card--medium {
         padding: 30px;
+    }
+
+    .card--extra-small {
+        padding: 25px 20px;
     }
 
     .card--inner-stroke {
