@@ -52,8 +52,13 @@
 }
 
 .card--expandable:hover .card__list {
-    bottom: 0;
     opacity: 1;
+    transform: translateY(0);
+}
+
+.card--expandable:hover .paragraph + .card__list {
+    opacity: 1;
+    transform: translateY(-70px);
 }
 
 .card--expandable:hover .card__picture {
@@ -199,10 +204,11 @@
     padding-right: 32px;
 
     position: absolute;
-    bottom: -100%;
+    bottom: 0;
 
     opacity: 0;
     transition: all 400ms linear;
+    transform: translateY(100%);
 }
 
 .card--extra-small .card__list {

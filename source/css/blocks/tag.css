@@ -1,0 +1,25 @@
+.tag {
+    padding: 9px 21px;
+    border: 1px solid var(--dark-grey-color);
+
+    font-size: 15px;
+    line-height: 22px;
+    color: var(--dark-grey-color);
+    text-decoration: none;
+
+    border-radius: 50px;
+    transition: all 200ms linear;
+}
+
+.tag:hover {
+    color: #FFFFFF;
+
+    border-color: var(--light-red-color);
+    background-color: var(--light-red-color);
+}
+
+@media (min-width: 900px) {
+    .tag {
+        padding: 13px 30px;
+    }
+}

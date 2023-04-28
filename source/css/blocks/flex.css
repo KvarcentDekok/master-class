@@ -10,7 +10,8 @@
     flex-wrap: wrap;
 }
 
-.flex--gap {
+.flex--gap,
+.flex--gap-small {
     gap: 10px;
 }
 
@@ -37,6 +38,10 @@
 @media (min-width: 900px) {
     .flex--gap {
         gap: 30px;
+    }
+
+    .flex--gap-small {
+        gap: 15px;
     }
 
     .flex--md-horizontal {

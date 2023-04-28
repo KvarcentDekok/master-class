@@ -7,15 +7,15 @@
     border-radius: 20px;
 }
 
-.table__row {
+.table__row .table__cell {
     background-color: #E9E9E9;
 }
 
-.table__row:nth-child(even) {
+.table__row:nth-child(even) .table__cell {
     background-color: #E0E0E0;
 }
 
-.table__head .table__row {
+.table__head .table__row .table__cell {
     background-color: var(--light-red-color);
 }
 
