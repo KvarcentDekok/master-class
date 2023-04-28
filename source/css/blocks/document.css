@@ -13,6 +13,7 @@
     text-decoration: none;
 
     border-radius: 10px;
+    transition: all 200ms linear;
 }
 
 .document:hover {
@@ -27,6 +28,8 @@
     flex-shrink: 0;
 
     color: var(--dark-red-color);
+
+    transition: all 200ms linear;
 }
 
 .document:hover .document__icon {

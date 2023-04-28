@@ -39,6 +39,10 @@
         gap: 30px;
     }
 
+    .flex--md-horizontal {
+        flex-direction: row;
+    }
+
     .flex__order-md-4 {
         order: 4;
     }

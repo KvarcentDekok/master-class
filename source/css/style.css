@@ -17,6 +17,7 @@
 @import url("blocks/body.css");
 @import url("blocks/row.css");
 @import url("blocks/list.css");
+@import url("blocks/figure.css");
 @import url("blocks/card.css");
 @import url("blocks/text-red.css");
 @import url("blocks/main.css");
@@ -38,6 +39,5 @@
 @import url("blocks/no-scroll.css");
 @import url("blocks/text-input.css");
 @import url("blocks/invalid-element.css");
-@import url("blocks/figure.css");
 @import url("blocks/row-photos.css");
 @import url("blocks/document.css");
