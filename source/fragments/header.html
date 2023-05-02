@@ -32,7 +32,7 @@
         </a>
 
         <a href="https://yandex.ru/maps/193/voronezh/house/volgogradskaya_ulitsa_48/Z0AYdAFmSU0HQFtrfXp1dnthbA==/?ll=39.273539%2C51.648724&z=13.29"
-           class="contacts__link contacts__link--address">
+           class="contacts__link contacts__link--address" target="_blank">
           Воронеж, ул. Волгоградская, д.48
         </a>
 
@@ -66,7 +66,7 @@
         </li>
 
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Клипсаторы</a>
+          <a href="#" class="navigation__link @@if (active === 'clippers') {navigation__link--active}">Клипсаторы</a>
         </li>
 
         <li class="navigation__item">
@@ -74,9 +74,12 @@
         </li>
 
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Расходные материалы</a>
+          <a href="#" class="navigation__link" data-call="dropdown" aria-haspopup="true"
+             aria-controls="consumables-block" aria-expanded="false">
+            Расходные материалы
+          </a>
 
-          <ul class="navigation__sub-list">
+          <ul id="consumables-block" class="dropdown navigation__sub-list">
             <li class="navigation__sub-item">
               <a href="#" class="navigation__sub-link">Скрепки</a>
             </li>

@@ -12,7 +12,7 @@
 	<title>Шприц вакуумный КОМПО ОПТИ 2000</title>
 </head>
 <body class="body body--circles-left">
-@@include('fragments/header.html')
+@@include('fragments/header.html', {"active": null})
 
 <main class="main">
 	<div class="container">
@@ -832,163 +832,167 @@
 		<div class="container">
 			<h2 class="section__title"><span class="text-red">Сопутствующее</span> оборудование</h2>
 
-			<ul class="row">
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+			<div class="slider">
+				<div id="related-equipment" class="slider__init slider__init--overflow">
+					<ul class="slider__list swiper-wrapper">
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
-			</ul>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -996,163 +1000,167 @@
 		<div class="container">
 			<h2 class="section__title">Ранее <span class="text-red">просмотренные</span> товары</h2>
 
-			<ul class="row">
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+			<div class="slider">
+				<div id="previously-viewed" class="slider__init slider__init--overflow">
+					<ul class="slider__list swiper-wrapper">
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
 
-				<li class="row__col-6 row__col-md-2">
-					<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
-						<h3 class="paragraph card__paragraph card__paragraph--small">
-							Волчок-приставка ВП-6000 к колбасному шприцу
-						</h3>
+						<li class="slider__slide swiper-slide">
+							<a href="product.html" class="card card--extra-small card--expandable card--flex-vertical">
+								<h3 class="paragraph card__paragraph card__paragraph--small">
+									Волчок-приставка ВП-6000 к колбасному шприцу
+								</h3>
 
-						<picture class="card__picture">
-							<source media="(min-width: 660px)" type="image/avif"
-							        srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
-							<source type="image/avif"
-							        srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
-							<source media="(min-width: 660px)"
-							        srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
+								<picture class="card__picture">
+									<source media="(min-width: 660px)" type="image/avif"
+											srcset="img/equipment-desktop@2x.avif 1x, img/equipment-desktop@2x.avif 2x">
+									<source type="image/avif"
+											srcset="img/equipment-mobile@1x.avif 1x, img/equipment-mobile@2x.avif 2x">
+									<source media="(min-width: 660px)"
+											srcset="img/equipment-desktop@2x.webp 1x, img/equipment-desktop@2x.webp 2x">
 
-							<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
-							     width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
-							     class="card__image">
-						</picture>
+									<img src="img/equipment-mobile@1x.webp" srcset="img/equipment-mobile@2x.webp 2x"
+										 width="254" height="235" alt="Клипсатор автоматический двухскрепочный КОМПО КН 501"
+										 class="card__image">
+								</picture>
 
-						<ul class="list card__list">
-							<li class="list__item">Вместимость бункера 250 л</li>
-							<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
-						</ul>
-					</a>
-				</li>
-			</ul>
+								<ul class="list card__list">
+									<li class="list__item">Вместимость бункера 250 л</li>
+									<li class="list__item">Режим прямого наполнения до 12000 кг/ч</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 

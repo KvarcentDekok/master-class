@@ -1,4 +1,6 @@
 .dropdown {
+    padding: 16px;
+
     position: absolute;
     z-index: 3;
 
@@ -6,6 +8,8 @@
     opacity: 0;
     transition: all 200ms linear;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1), 0 52px 115px 0 rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 15px;
 }
 
 .dropdown--show {

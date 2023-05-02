@@ -90,6 +90,15 @@ gulp.task("copy", () => {
         .pipe(gulp.dest("build"));
 });
 
+gulp.task("copy:favicon", () => {
+    return gulp.src([
+        "source/favicon/**"
+    ], {
+        base: "source/favicon"
+    })
+        .pipe(gulp.dest("build"));
+});
+
 gulp.task("clean", () => {
     return del("build");
 });
@@ -100,5 +109,5 @@ gulp.task("refresh", (done) => {
 });
 
 
-gulp.task("build", gulp.series("clean", "copy", "html", "css", "css:libs", "js"));
+gulp.task("build", gulp.series("clean", "copy", "copy:favicon", "html", "css", "css:libs", "js"));
 gulp.task("start", gulp.series("build", "server"));

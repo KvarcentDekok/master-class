@@ -42,6 +42,10 @@
 }
 
 @media (min-width: 900px) {
+    .row__col-sm-3 {
+        width: 25%;
+    }
+
     .row__col-sm-4 {
         width: calc(100% / 3);
     }

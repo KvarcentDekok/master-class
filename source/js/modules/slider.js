@@ -78,20 +78,15 @@ export function initScrollTable() {
 
 export function initRowPhotos() {
     const sliderRowPhotos = new Swiper('#row-photos', {
-        modules: [Grid, Autoplay],
+        modules: [Autoplay],
         spaceBetween: 15,
         slidesPerView: 2,
         lazy: true,
-        grid: {
-            fill: 'row',
-            rows: 2,
-        },
         autoplay: {
             enabled: false
         },
         breakpoints: {
             900: {
-                grid: false,
                 spaceBetween: 25,
                 slidesPerView: 4,
                 loop: true,
@@ -100,6 +95,38 @@ export function initRowPhotos() {
                     delay: 0
                 },
                 speed: 5000,
+            }
+        }
+    });
+}
+
+export function initRelatedEquipment() {
+    const sliderRelatedEquipment = new Swiper('#related-equipment', {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        lazy: true,
+        breakpoints: {
+            900: {
+                slidesPerView: 3
+            },
+            1260: {
+                slidesPerView: 6
+            }
+        }
+    });
+}
+
+export function initPreviouslyViewed() {
+    const sliderPreviouslyViewed = new Swiper('#previously-viewed', {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        lazy: true,
+        breakpoints: {
+            900: {
+                slidesPerView: 3
+            },
+            1260: {
+                slidesPerView: 6
             }
         }
     });
