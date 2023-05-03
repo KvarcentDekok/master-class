@@ -5,6 +5,12 @@
     gap: 10px;
 }
 
+.contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .contacts__link {
     padding-left: 28px;
 
@@ -68,6 +74,10 @@
     font-size: 18px;
 }
 
+.contacts__button {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .contacts__link--main {
         width: 33px;
@@ -90,14 +100,18 @@
     }
 }
 
-@media (min-width: 1500px) {
-    .contacts {
-        gap: 10px 60px;
-    }
-}
-
 @media (min-width: 900px) {
     .header__contacts .contacts__link:not(.contacts__link--main) {
         display: block;
+    }
+
+    .contacts__button {
+        display: block;
+    }
+}
+
+@media (min-width: 1500px) {
+    .contacts {
+        gap: 10px 60px;
     }
 }

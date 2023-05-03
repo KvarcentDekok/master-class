@@ -21,6 +21,7 @@
 
 .slider__slide {
     box-sizing: border-box;
+    height: auto;
 }
 
 .slider__control {

@@ -1,141 +1,150 @@
 <header class="header">
-  <div class="container header__container">
-    <div class="header__wrapper">
-      <a href="index.html" class="logo header__logo">
-        <span class="visually-hidden">На главную</span>
-        <img src="img/logo.webp" class="logo__image" width="138" height="68" alt="Мастер Класс">
-      </a>
+    <div class="container header__container">
+        <div class="header__wrapper">
+            <a href="index.html" class="logo header__logo">
+                <span class="visually-hidden">На главную</span>
+                <img src="img/logo.webp" class="logo__image" width="138" height="68" alt="Мастер Класс">
+            </a>
 
-      <p class="paragraph header__paragraph">Оборудование для производства колбасных изделий и плавленного сыра</p>
+            <p class="paragraph header__paragraph">Оборудование для производства колбасных изделий и плавленного
+                сыра</p>
 
-      <div class="social-wrapper header__social-wrapper">
-        <a href="#" class="social-link">
-          <svg width="22" height="17" viewBox="0 0 22 17">
-            <use xlink:href="img/sprite.svg#telegram"></use>
-          </svg>
+            <div class="social-wrapper header__social-wrapper">
+                <a href="#" class="social-link">
+                    <svg width="22" height="17" viewBox="0 0 22 17">
+                        <use xlink:href="img/sprite.svg#telegram"></use>
+                    </svg>
 
-          <span class="visually-hidden">Мы в Telegram</span>
-        </a>
+                    <span class="visually-hidden">Мы в Telegram</span>
+                </a>
 
-        <a href="#" class="social-link">
-          <svg width="21" height="21" viewBox="0 0 21 21">
-            <use xlink:href="img/sprite.svg#whatsapp"></use>
-          </svg>
+                <a href="#" class="social-link">
+                    <svg width="21" height="21" viewBox="0 0 21 21">
+                        <use xlink:href="img/sprite.svg#whatsapp"></use>
+                    </svg>
 
-          <span class="visually-hidden">Мы в Whatsapp</span>
-        </a>
-      </div>
+                    <span class="visually-hidden">Мы в Whatsapp</span>
+                </a>
+            </div>
 
-      <div class="contacts header__contacts">
-        <a href="tel:+74732475786" class="contacts__link contacts__link--phone contacts__link--main">
-          +7 (473) 247 57 86
-        </a>
+            <div class="contacts header__contacts">
+                <div class="contacts__wrapper">
+                    <a href="tel:+74732475786" class="contacts__link contacts__link--phone contacts__link--main">
+                        +7 (473) 247 57 86
+                    </a>
 
-        <a href="https://yandex.ru/maps/193/voronezh/house/volgogradskaya_ulitsa_48/Z0AYdAFmSU0HQFtrfXp1dnthbA==/?ll=39.273539%2C51.648724&z=13.29"
-           class="contacts__link contacts__link--address" target="_blank">
-          Воронеж, ул. Волгоградская, д.48
-        </a>
+                    <a href="tel:+74732471778" class="contacts__link contacts__link--phone">
+                        +7 (473) 247 17 78
+                    </a>
+                </div>
 
-        <a href="tel:+74732471778" class="contacts__link contacts__link--phone">
-          +7 (473) 247 17 78
-        </a>
+                <div class="contacts__wrapper">
+                    <a href="#map" class="contacts__link contacts__link--address">
+                        Воронеж, ул. Волгоградская, д.48
+                    </a>
 
-        <a href="mailto:mastervrn@mail.ru" class="contacts__link contacts__link--email">
-          mastervrn@mail.ru
-        </a>
-      </div>
+                    <a href="mailto:mastervrn@mail.ru" class="contacts__link contacts__link--email">
+                        mastervrn@mail.ru
+                    </a>
+                </div>
+
+                <a href="#" class="button button--small contacts__button">О компании</a>
+            </div>
+        </div>
+
+        <button type="button" class="header__toggle" aria-controls="main-navigation" aria-expanded="false">
+            <span class="visually-hidden header__toggle-text">Развернуть меню</span>
+
+            <svg width="49" height="28" viewBox="0 0 49 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line class="header__toggle-line" x1="2" y1="2" x2="47" y2="2" stroke="#8D0D0C" stroke-width="4"
+                      stroke-linecap="round"></line>
+                <line class="header__toggle-line" x1="2" y1="14" x2="47" y2="14" stroke="#8D0D0C" stroke-width="4"
+                      stroke-linecap="round"></line>
+                <line class="header__toggle-line" x1="2" y1="26" x2="47" y2="26" stroke="#8D0D0C" stroke-width="4"
+                      stroke-linecap="round"></line>
+            </svg>
+        </button>
+
+        <nav id="main-navigation" class="navigation header__navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--fixed-visible">
+                    <a href="index.html" class="logo navigation__logo">
+                        <span class="visually-hidden">На главную</span>
+                        <img src="img/logo-small.webp" class="logo__image" width="152" height="168" alt="Мастер Класс">
+                    </a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Шприцы вакуумные</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link @@if (active === 'clippers') {navigation__link--active}">Клипсаторы</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Линейки оборудования</a>
+                </li>
+
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link" data-call="dropdown" aria-haspopup="true"
+                       aria-controls="consumables-block" aria-expanded="false" data-on="hover">
+                        Расходные материалы
+                    </a>
+
+                    <ul id="consumables-block" class="dropdown navigation__sub-list">
+                        <li class="navigation__sub-item">
+                            <a href="#" class="navigation__sub-link">Скрепки</a>
+                        </li>
+
+                        <li class="navigation__sub-item">
+                            <a href="#" class="navigation__sub-link">Лента этикитировочная</a>
+                        </li>
+
+                        <li class="navigation__sub-item">
+                            <a href="#" class="navigation__sub-link">Петли</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <button type="button" class="navigation__button" data-call="dropdown" aria-haspopup="true"
+                    aria-controls="navigation-extra-block" aria-expanded="false" data-on="click">
+                <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line class="navigation__button-line" x1="2" y1="2" x2="38" y2="2" stroke="#FFFFFF" stroke-width="2"
+                          stroke-linecap="round"></line>
+                    <line class="navigation__button-line" x1="2" y1="10" x2="38" y2="10" stroke="#FFFFFF"
+                          stroke-width="2"
+                          stroke-linecap="round"></line>
+                    <line class="navigation__button-line" x1="2" y1="18" x2="38" y2="18" stroke="#FFFFFF"
+                          stroke-width="2"
+                          stroke-linecap="round"></line>
+                </svg>
+
+                <span class="navigation__button-text">Ещё 4</span>
+            </button>
+
+            <div id="navigation-extra-block" class="dropdown navigation__dropdown">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Инвентарь и аксессуары</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Запасные части</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="service.html" class="navigation__link">Сервис</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Вспомогательное</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="button button--small navigation__mobile-button">О компании</a>
+        </nav>
     </div>
-
-    <button type="button" class="header__toggle" aria-controls="main-navigation" aria-expanded="false">
-      <span class="visually-hidden header__toggle-text">Развернуть меню</span>
-
-      <svg width="49" height="28" viewBox="0 0 49 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <line class="header__toggle-line" x1="2" y1="2" x2="47" y2="2" stroke="#8D0D0C" stroke-width="4"
-              stroke-linecap="round"></line>
-        <line class="header__toggle-line" x1="2" y1="14" x2="47" y2="14" stroke="#8D0D0C" stroke-width="4"
-              stroke-linecap="round"></line>
-        <line class="header__toggle-line" x1="2" y1="26" x2="47" y2="26" stroke="#8D0D0C" stroke-width="4"
-              stroke-linecap="round"></line>
-      </svg>
-    </button>
-
-    <nav id="main-navigation" class="navigation header__navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Шприцы</a>
-        </li>
-
-        <li class="navigation__item">
-          <a href="#" class="navigation__link @@if (active === 'clippers') {navigation__link--active}">Клипсаторы</a>
-        </li>
-
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Линейки оборудования</a>
-        </li>
-
-        <li class="navigation__item">
-          <a href="#" class="navigation__link" data-call="dropdown" aria-haspopup="true"
-             aria-controls="consumables-block" aria-expanded="false">
-            Расходные материалы
-          </a>
-
-          <ul id="consumables-block" class="dropdown navigation__sub-list">
-            <li class="navigation__sub-item">
-              <a href="#" class="navigation__sub-link">Скрепки</a>
-            </li>
-
-            <li class="navigation__sub-item">
-              <a href="#" class="navigation__sub-link">Лента этикитировочная</a>
-            </li>
-
-            <li class="navigation__sub-item">
-              <a href="#" class="navigation__sub-link">Петли</a>
-            </li>
-          </ul>
-        </li>
-
-        <li class="navigation__item">
-          <a href="#" class="navigation__link">Инвентарь и аксессуары</a>
-        </li>
-      </ul>
-
-      <button type="button" class="navigation__button" data-call="dropdown" aria-haspopup="true"
-              aria-controls="navigation-extra-block" aria-expanded="false">
-        <svg width="40" height="20" viewBox="0 0 40 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <line class="navigation__button-line" x1="2" y1="2" x2="38" y2="2" stroke="#FFFFFF" stroke-width="2"
-                stroke-linecap="round"></line>
-          <line class="navigation__button-line" x1="2" y1="10" x2="38" y2="10" stroke="#FFFFFF" stroke-width="2"
-                stroke-linecap="round"></line>
-          <line class="navigation__button-line" x1="2" y1="18" x2="38" y2="18" stroke="#FFFFFF" stroke-width="2"
-                stroke-linecap="round"></line>
-        </svg>
-
-        <span class="navigation__button-text">Ещё 5</span>
-      </button>
-
-      <div id="navigation-extra-block" class="dropdown navigation__dropdown">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Запасные части</a>
-          </li>
-
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Сервис</a>
-          </li>
-
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Вспомогательное</a>
-          </li>
-
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">О компании</a>
-          </li>
-
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Контакты</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
 </header>

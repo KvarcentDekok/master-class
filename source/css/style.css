@@ -4,6 +4,7 @@
 @import url("blocks/paragraph.css");
 @import url("blocks/social-wrapper.css");
 @import url("blocks/dropdown.css");
+@import url("blocks/button.css");
 @import url("blocks/navigation.css");
 @import url("blocks/header.css");
 @import url("blocks/container.css");
@@ -24,7 +25,6 @@
 @import url("blocks/features.css");
 @import url("blocks/content.css");
 @import url("blocks/video.css");
-@import url("blocks/button.css");
 @import url("blocks/awards.css");
 @import url("blocks/flex.css");
 @import url("blocks/map.css");

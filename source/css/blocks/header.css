@@ -17,7 +17,6 @@
 
 .header__container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 30px 20px;
@@ -37,19 +36,18 @@
 }
 
 .header__social-wrapper {
-    display: none;
     margin-right: 30px;
 }
 
 .header__logo {
-    margin-right: 30px;
+    margin-right: 10px;
     flex-shrink: 0;
 }
 
 .header__toggle {
     padding: 0;
     border: none;
-    margin-left: 55px;
+    margin-left: 10px;
 
     background-color: transparent;
 }
@@ -121,6 +119,14 @@
         overflow: hidden;
     }
 
+    .header__container {
+        flex-wrap: wrap;
+    }
+
+    .header__logo {
+        margin-right: 30px;
+    }
+
     .header__wrapper {
         justify-content: initial;
         flex-grow: initial;
@@ -128,10 +134,6 @@
 
     .header__paragraph {
         display: block;
-    }
-
-    .header__social-wrapper {
-        display: flex;
     }
 
     .header__toggle {

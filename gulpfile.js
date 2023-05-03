@@ -19,6 +19,7 @@ const atImport = require('postcss-import');
 const plugins = [
     'node_modules/swiper/swiper-bundle.min.css',
     'node_modules/swiper/modules/scrollbar/scrollbar.min.css',
+    'node_modules/@fancyapps/ui/dist/fancybox/fancybox.css'
 ];
 
 const config = (file) => ({

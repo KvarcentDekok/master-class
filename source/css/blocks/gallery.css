@@ -37,6 +37,9 @@
 
 .gallery__thumb {
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     opacity: 0.5;
     border-radius: 7px;
@@ -45,11 +48,6 @@
 
 .gallery__thumb--active {
     opacity: 1;
-}
-
-.gallery__thumb-picture {
-    display: block;
-    width: 100%;
 }
 
 .gallery__thumb-image {
