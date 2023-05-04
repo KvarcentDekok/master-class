@@ -88,6 +88,16 @@ export function initRowPhotos() {
         breakpoints: {
             900: {
                 spaceBetween: 25,
+                slidesPerView: 3,
+                loop: true,
+                autoplay: {
+                    enabled: true,
+                    delay: 0
+                },
+                speed: 5000,
+            },
+            1280: {
+                spaceBetween: 25,
                 slidesPerView: 4,
                 loop: true,
                 autoplay: {

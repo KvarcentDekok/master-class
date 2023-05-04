@@ -32,6 +32,10 @@
     transform: translate(-50%, -50%);
 }
 
+.figure__image--max-width {
+    max-width: initial;
+}
+
 @media (min-width: 900px) {
     .figure {
         height: 100%;

@@ -62,7 +62,7 @@
     transform: translateY(-70px);
 }
 
-.card--expandable:hover .card__picture {
+.card--expandable:hover .card__image {
     filter: blur(7.5px);
     transition: all 200ms linear;
 }
@@ -162,6 +162,7 @@
 
 .card__image {
     width: 100%;
+    margin-top: auto;
 }
 
 .card__circles {
