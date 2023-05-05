@@ -171,6 +171,9 @@
 
 .logo.navigation__logo {
     width: 52px;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 @media (max-width: 900px) {
